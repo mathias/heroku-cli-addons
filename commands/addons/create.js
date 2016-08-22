@@ -68,7 +68,8 @@ const cmd = {
   flags: [
     {name: 'name', description: 'name for the add-on resource', hasValue: true},
     {name: 'as', description: 'name for the initial add-on attachment', hasValue: true},
-    {name: 'confirm', description: 'overwrite existing config vars or existing add-on attachments', hasValue: true}
+    {name: 'confirm', description: 'overwrite existing config vars or existing add-on attachments', hasValue: true},
+    {name: 'wait', description: 'watch add-on provision status and exit when complete'}
   ],
   run: cli.command({preauth: true}, co.wrap(run))
 }
