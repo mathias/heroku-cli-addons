@@ -23,6 +23,22 @@
 * [`heroku addons:upgrade ADDON [PLAN]`](#heroku-addonsupgrade-addon-plan)
 * [`heroku addons:wait ADDON`](#heroku-addonswait-addon)
 
+## Installation (during private beta)
+
+Git clone this repo
+```
+git clone https://github.com/heroku/heroku-cli-addons
+```
+
+Change into the directory and link the plugin:
+
+```bash
+cd heroku-cli-addons
+heroku plugins:link
+```
+
+You should now have the plugin installed.
+
 ## `heroku addons [--all|--app APP]`
 
 lists your add-ons and attachments
